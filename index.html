@@ -1,34 +1,71 @@
-<!-- index.html -->
 <!doctype html>
-<html lang="ur">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>For Cloud Computing Project</title>
+  <title>Website for Cloud Computing project</title>
   <style>
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif; padding: 2rem; line-height: 1.6; }
-    header { margin-bottom: 1.5rem; }
-    h1 { color: #1a73e8; }
-    .card { border: 1px solid #eee; padding: 1rem; border-radius: 8px; max-width: 700px; background: #fafafa; }
-    a.button { display:inline-block; margin-top:0.7rem; padding:0.5rem 0.9rem; border-radius:6px; text-decoration:none; border:1px solid #1a73e8; color:#1a73e8; }
+    body { 
+      font-family: Arial, sans-serif; 
+      padding: 2rem; 
+      background-color: #f9fafb; 
+      color: #333; 
+      line-height: 1.6; 
+    }
+    header { 
+      margin-bottom: 2rem; 
+      text-align: center; 
+    }
+    h1 { 
+      color: #1a73e8; 
+    }
+    .card { 
+      border: 1px solid #ddd; 
+      padding: 1.5rem; 
+      border-radius: 10px; 
+      background: #fff; 
+      max-width: 700px; 
+      margin: 0 auto; 
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1); 
+    }
+    a.button { 
+      display:inline-block; 
+      margin-top:1rem; 
+      padding:0.6rem 1rem; 
+      border-radius:6px; 
+      text-decoration:none; 
+      border:1px solid #1a73e8; 
+      color:#1a73e8; 
+      transition: all 0.3s ease; 
+    }
+    a.button:hover { 
+      background:#1a73e8; 
+      color:#fff; 
+    }
+    footer { 
+      margin-top: 2rem; 
+      text-align: center; 
+      font-size: 0.9rem; 
+      color: #555; 
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Assalamualaikum — Mera Pehla Site</h1>
-    <p>Yeh ek choti si demo HTML file hai jo GitHub + Netlify par deploy ki jayegi.</p>
+    <h1>Welcome to My Website</h1>
+    <p>This is a simple HTML project created for the course <strong>Virtualisation and Cloud Computing</strong>.</p>
   </header>
 
   <section class="card">
-    <h2>About</h2>
-    <p>Yahan pe aap apna naam, course, ya jo chaho likh sakte ho. Example ke liye likha hai:</p>
-    <p><strong>Naam:</strong> Hafiz Mizfar<br><strong>Course:</strong> BSCS</p>
+    <h2>About Me</h2>
+    <p><strong>Name:</strong> Mizfar</p>
+    <p><strong>Course:</strong> Virtualisation and Cloud Computing</p>
+    <p>This is my first deployment using GitHub and Netlify. The purpose of this project is to demonstrate how to host a basic static website on the cloud.</p>
     <a class="button" href="https://github.com" target="_blank" rel="noopener">Visit GitHub</a>
   </section>
 
-  <footer style="margin-top:1.5rem; font-size:0.9rem; color:#555;">
-    <p>© <?= new Date().getFullYear ? new Date().getFullYear() : '2025' ?> — Demo site</p>
+  <footer>
+    <p>© 2025 — Created by Mizfar</p>
   </footer>
 </body>
 </html>
-
